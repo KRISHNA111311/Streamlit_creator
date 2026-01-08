@@ -4,7 +4,6 @@ import json
 import io
 import zipfile
 import re
-
 # -------------------- Utility Functions --------------------
 def init_state():
     defaults = {
@@ -21,7 +20,6 @@ def init_state():
     }
     for k, v in defaults.items():
         st.session_state.setdefault(k, v)
-
 def clean_json_text(raw: str) -> str:
     """Cleans Gemini output to make it JSON-compatible."""
     if not raw:
@@ -340,3 +338,4 @@ Requirements:
 # -------------------- Footer --------------------
 st.markdown("---")
 st.caption("✨ Multi-Select Questions • Line Range Control • Advanced UI Generation • JSON Auto-Fix")
+
